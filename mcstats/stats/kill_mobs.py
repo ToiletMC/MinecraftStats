@@ -52,7 +52,7 @@ create_kill_stat('panda','五年起步','熊猫',1901) # added in 18w43a
 create_kill_stat('piglin','死猪不怕开水烫','猪灵', 2506) # added in 20w07a
 create_kill_stat('polar_bear','极地猎人','北极熊')
 create_kill_stat('snow_golem','抗霜冻','雪傀儡')
-create_kill_stat('zombie_pigman','下界帮派战','僵尸猪人',0,2510) # renamed to Zombified Piglin in 20w09a
+create_kill_stat('zombie_pigman','生化危机','僵尸猪人',0,2510) # renamed to Zombified Piglin in 20w09a
 create_kill_stat('zombified_piglin','生化危机','僵尸猪灵',2510)   # added in 20w09a
 
 # Passives
