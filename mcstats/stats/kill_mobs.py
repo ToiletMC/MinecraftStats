@@ -17,7 +17,7 @@ def create_kill_stat(mobId, title, mobText, minVersion = 0, maxVersion = float("
             'kill_' + mobId,
             {
                 'title': title,
-                'desc': mobText + ' killed',
+                'desc': '杀死的' + mobText,
                 'unit': 'int',
             },
             mcstats.StatReader(['minecraft:killed','minecraft:' + mobId]),
@@ -26,52 +26,52 @@ def create_kill_stat(mobId, title, mobText, minVersion = 0, maxVersion = float("
         ))
 
 # Hostiles
-create_kill_stat('blaze','Extinguisher','Blazes')
-create_kill_stat('creeper','Creeper Creep','Creepers')
-create_kill_stat('endermite','End Ratter','Endermite')
-create_kill_stat('ender_dragon','Dragon Hunter','Ender Dragons')
-create_kill_stat('ghast','Tear Drinker','Ghasts')
-create_kill_stat('magma_cube','Magma Cream','Magma Cubes')
-create_kill_stat('phantom','Phantom Shooter','Phantoms',1467) # added in 18w07a
+create_kill_stat('blaze','灭火器','烈焰人')
+create_kill_stat('creeper','拆弹专家','苦力怕')
+create_kill_stat('endermite','鼠辈终结','末影螨')
+create_kill_stat('ender_dragon','屠龙者','末影龙')
+create_kill_stat('ghast','饮泣者','恶魂')
+create_kill_stat('magma_cube','火山泥面膜','岩浆怪')
+create_kill_stat('phantom','幻翼射手','幻翼',1467) # added in 18w07a
 # Note: Ravagers had been added as Illager Beats in 18w43a (1901)
 # support for that snapshot may be added on demand
-create_kill_stat('ravager','Ravaging!','Ravagers',1930) # changed in 19w05a
-create_kill_stat('shulker','Shulker Cracker','Shulkers')
-create_kill_stat('silverfish','Nasty Little...','Silverfish')
-create_kill_stat('slime','Swamp Lurker','Slimes')
-create_kill_stat('vex','Vex Hunter','Vexes')
-create_kill_stat('witch','Witch Hunter','Witches')
-create_kill_stat('wither_skeleton','Wither Or Not','Wither Skeletons')
+create_kill_stat('ravager','打砸抢烧！','劫掠兽',1930) # changed in 19w05a
+create_kill_stat('shulker','潜影贝天敌','潜影贝')
+create_kill_stat('silverfish','恶心的小家伙……','蠹虫')
+create_kill_stat('slime','沼泽伏击者','史莱姆')
+create_kill_stat('vex','恼鬼猎人','恼鬼')
+create_kill_stat('witch','猎巫行动','女巫')
+create_kill_stat('wither_skeleton','凋不凋','凋灵骷髅')
 
 # Neutrals
-create_kill_stat('bee','Beegone!','Bees',2200) # added in 19w34a
-create_kill_stat('dolphin','Dolphin Hunter','Dolphins',1482) # added in 18w15a
-create_kill_stat('enderman','Enderman Ender','Endermen')
-create_kill_stat('iron_golem','Defense Down!','Iron Golems')
-create_kill_stat('panda','Kung FU! Panda','Pandas',1901) # added in 18w43a
-create_kill_stat('piglin','Die, Pig!','Piglins', 2506) # added in 20w07a
-create_kill_stat('polar_bear','Polar Hunter','Polar Bears')
-create_kill_stat('snow_golem','AntiFrosty','Snow Golems')
-create_kill_stat('zombie_pigman','Nether Gang War','Zombie Pigmen',0,2510) # renamed to Zombified Piglin in 20w09a
-create_kill_stat('zombified_piglin','Nether Gang War','Zombified Piglins',2510)   # added in 20w09a
+create_kill_stat('bee','蜂飞飞','蜜蜂',2200) # added in 19w34a
+create_kill_stat('dolphin','海豚捕手','海豚',1482) # added in 18w15a
+create_kill_stat('enderman','末影人之末','末影人')
+create_kill_stat('iron_golem','失守了！','铁傀儡')
+create_kill_stat('panda','五年起步','熊猫',1901) # added in 18w43a
+create_kill_stat('piglin','死猪不怕开水烫','猪灵', 2506) # added in 20w07a
+create_kill_stat('polar_bear','极地猎人','北极熊')
+create_kill_stat('snow_golem','抗霜冻','雪傀儡')
+create_kill_stat('zombie_pigman','下界帮派战','僵尸猪人',0,2510) # renamed to Zombified Piglin in 20w09a
+create_kill_stat('zombified_piglin','生化危机','僵尸猪灵',2510)   # added in 20w09a
 
 # Passives
-create_kill_stat('bat','Bat Flap','Bats')
-create_kill_stat('chicken','Chicken Griller','Chickens')
-create_kill_stat('cow','Cow Tipper','Cows')
-create_kill_stat('horse','Horse Hater','Horses')
-create_kill_stat('fox','What Does The Fox Say?','Foxes',1932) # added in 19w07a
-create_kill_stat('mooshroom','Mycelium Cowboy','Mooshrooms')
-create_kill_stat('parrot','Stupid Bird!','Parrots')
-create_kill_stat('pig','Pork Chopper','Pigs')
-create_kill_stat('rabbit','Bunny Killer :(','Rabbits')
-create_kill_stat('sheep','Big Bad Wolf','Sheep')
-create_kill_stat('squid','Pool Cleaner','Squids')
-create_kill_stat('strider','Lava Pool Cleaner','Striders',2520) # added in 20w13a
-create_kill_stat('turtle','Super Mario','Turtles',1467) # added in 18w07a
-create_kill_stat('villager','Bully','Villagers')
-create_kill_stat('wandering_trader','Trade Sanctions','Wandering Traders',1930) # added in 19w05a
-create_kill_stat('wolf','Bad Dog!','Wolves and Dogs')
+create_kill_stat('bat','不是我的错','蝙蝠')
+create_kill_stat('chicken','鸡串烤场','鸡')
+create_kill_stat('cow','庖丁再世','牛')
+create_kill_stat('horse','吁～','马')
+create_kill_stat('fox','狐狸怎么叫？','狐狸',1932) # added in 19w07a
+create_kill_stat('mooshroom','哞～','哞菇')
+create_kill_stat('parrot','蠢鸟！','鹦鹉')
+create_kill_stat('pig','咸猪手','猪')
+create_kill_stat('rabbit','怎么可以杀兔兔 :(','兔子')
+create_kill_stat('sheep','大恶狼','羊')
+create_kill_stat('squid','池塘清洁工','鱿鱼')
+create_kill_stat('strider','火云邪神','炽足兽',2520) # added in 20w13a
+create_kill_stat('turtle','龟龟','海龟',1467) # added in 18w07a
+create_kill_stat('villager','恶霸','村民')
+create_kill_stat('wandering_trader','贸易制裁','流浪商人',1930) # added in 19w05a
+create_kill_stat('wolf','坏狗狗！','狼与狗')
 
 # Cats (including ozelots)
 mcstats.registry.append(
