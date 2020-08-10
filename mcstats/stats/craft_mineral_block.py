@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'craft_mineral_block',
         {
-            'title': 'Compressor',
-            'desc': 'Mineral blocks crafted',
+            'title': '压缩机',
+            'desc': '制作的矿物方块',
             'unit': 'int',
         },
         mcstats.StatSumReader([

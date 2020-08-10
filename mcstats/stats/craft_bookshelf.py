@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'craft_bookshelf',
         {
-            'title': 'Librarian',
-            'desc': 'Bookshelves crafted',
+            'title': '图书管理员',
+            'desc': '制作的书架',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:crafted','minecraft:bookshelf'])

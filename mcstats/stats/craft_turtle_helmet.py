@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'craft_turtle_helmet',
         {
-            'title': 'Turtlehead',
-            'desc': 'Turtle Helmets crafted',
+            'title': '染成绿的',
+            'desc': '制作的海龟壳',
             'unit': 'int',
         },
         mcstats.StatSumReader([

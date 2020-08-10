@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'damage_dealt',
         {
-            'title': 'Berserk!',
-            'desc': 'Damage dealt',
+            'title': '暴力狂！',
+            'desc': '所造成的伤害',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:custom','minecraft:damage_dealt'])

@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'craft_clock',
         {
-            'title': 'Timekeeper',
-            'desc': 'Clocks crafted',
+            'title': '时间管理大师',
+            'desc': '制作的时钟',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:crafted','minecraft:clock']),

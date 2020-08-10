@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'craft_respawn_anchor',
         {
-            'title': 'Respawn',
-            'desc': 'Respawn Anchors crafted',
+            'title': '涅磐',
+            'desc': '制作的重生锚',
             'unit': 'int',
         },
         mcstats.StatSumReader([

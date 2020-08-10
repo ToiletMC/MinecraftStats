@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'damage_shield',
         {
-            'title': 'Shield',
-            'desc': 'Damage blocked',
+            'title': '盾者',
+            'desc': '所防御的伤害',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:custom','minecraft:damage_blocked_by_shield']),

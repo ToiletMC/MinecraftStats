@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'breed',
         {
-            'title': 'Ranch',
-            'desc': 'Animals bred',
+            'title': '农场主',
+            'desc': '饲养的动物',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:custom','minecraft:animals_bred'])

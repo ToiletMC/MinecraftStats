@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'break_tools',
         {
-            'title': 'Wastrel',
-            'desc': 'Tools broken',
+            'title': '败家子',
+            'desc': '消损的工具',
             'unit': 'int',
         },
         mcstats.StatSumMatchReader(

@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'aviate',
         {
-            'title': 'Aviator',
-            'desc': 'Distance gone by elytra',
+            'title': '飞行员',
+            'desc': '用鞘翅飞行的距离',
             'icon': 'items/elytra.png',
             'unit': 'cm',
         },
