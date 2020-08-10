@@ -5,7 +5,7 @@ mcstats.registry.append(
         'mine_ground',
         {
             'title': '挖掘机',
-            'desc': '挖掘的泥土/沙子等等',
+            'desc': '挖掘的泥土和沙子等等',
             'unit': 'int',
         },
         mcstats.StatSumReader([

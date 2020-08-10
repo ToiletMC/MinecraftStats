@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'use_hoe',
         {
-            'title': 'Farmer',
-            'desc': 'Ground blocks plowed',
+            'title': '农人',
+            'desc': '犁过的方块',
             'unit': 'int',
         },
         mcstats.StatSumMatchReader(

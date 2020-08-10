@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'place_glass',
         {
-            'title': 'Glassworker',
-            'desc': 'Glass placed',
+            'title': '玻璃工人',
+            'desc': '玻璃的放置',
             'unit': 'int',
         },
         mcstats.StatSumMatchReader(

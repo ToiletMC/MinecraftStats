@@ -18,8 +18,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'place_electrics',
         {
-            'title': 'Electrician',
-            'desc': 'Redstone items placed',
+            'title': '电工师傅',
+            'desc': '红石物品的放置',
             'unit': 'int',
         },
         # subtract mined from placed

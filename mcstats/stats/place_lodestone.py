@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'place_lodestone',
         {
-            'title': 'Lodecrumb Trail',
-            'desc': 'Lodestone placed',
+            'title': '带磁面包屑的小径',
+            'desc': '磁石的放置',
             'unit': 'int',
         },
         mcstats.StatDiffReader(

@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'use_honey_bottle',
         {
-            'title': 'Winnie the Pooh',
-            'desc': 'Honey bottles drunk',
+            'title': '小熊维尼',
+            'desc': '喝下的蜂蜜',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:used','minecraft:honey_bottle']),

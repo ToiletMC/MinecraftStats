@@ -3,8 +3,8 @@ from mcstats import mcstats
 mainStat = mcstats.MinecraftStat(
         'place_sign',
         {
-            'title': 'README.TXT',
-            'desc': 'Signs placed',
+            'title': '便利贴之王',
+            'desc': '告示牌的放置',
             'unit': 'int',
         },
         # subtract mined from used

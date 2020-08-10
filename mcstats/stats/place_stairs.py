@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'place_stairs',
         {
-            'title': 'MaStair',
-            'desc': 'Stairs built',
+            'title': '上上下下',
+            'desc': '搭建的楼梯',
             'unit': 'int',
         },
         # subtract mined from placed

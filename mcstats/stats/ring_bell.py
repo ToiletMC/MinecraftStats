@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'ring_bell',
         {
-            'title': 'Ding Dong Ditch!',
-            'desc': 'Bells rung',
+            'title': '铃儿响叮当',
+            'desc': '撞钟的次数',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:custom','minecraft:bell_ring']),

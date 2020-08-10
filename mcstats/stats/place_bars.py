@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'place_bars',
         {
-            'title': 'Jailer',
-            'desc': 'Iron bars & chains placed',
+            'title': '狱卒',
+            'desc': '铁栏杆和锁链的放置',
             'unit': 'int',
         },
         mcstats.StatSumReader([

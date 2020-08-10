@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'place_wall',
         {
-            'title': 'Iron Curtain',
-            'desc': 'Walls placed',
+            'title': '柏林墙',
+            'desc': '墙的构筑',
             'unit': 'int',
         },
         mcstats.StatSumMatchReader(

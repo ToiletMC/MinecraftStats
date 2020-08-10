@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'place_lantern',
         {
-            'title': 'Fear Of The Dark',
-            'desc': 'Lanterns placed',
+            'title': '黑暗之惧',
+            'desc': '灯笼的放置',
             'unit': 'int',
         },
         mcstats.StatSumReader([

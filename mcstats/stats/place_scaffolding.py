@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'place_scaffolding',
         {
-            'title': 'Bob The Builder',
-            'desc': 'Scaffoldings placed',
+            'title': '建筑施工队',
+            'desc': '脚手架的放置',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:used','minecraft:scaffolding']),

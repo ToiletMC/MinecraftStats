@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'place_banner',
         {
-            'title': 'Propaganda',
-            'desc': 'Banners placed',
+            'title': '小广告王',
+            'desc': '旗帜的放置',
             'unit': 'int',
         },
         # subtract mined from placed

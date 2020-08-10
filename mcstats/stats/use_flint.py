@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'use_flint',
         {
-            'title': 'Pyromaniac',
-            'desc': 'Fires started',
+            'title': '纵火狂',
+            'desc': '点燃物品',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:used','minecraft:flint_and_steel'])

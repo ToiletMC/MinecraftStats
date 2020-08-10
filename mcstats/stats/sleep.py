@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'sleep',
         {
-            'title': 'Sleepyhead',
-            'desc': 'Times slept',
+            'title': '瞌睡虫上身',
+            'desc': '睡觉的次数',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:custom','minecraft:sleep_in_bed'])

@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'ride_strider',
         {
-            'title': 'The Floor Is Lava',
-            'desc': 'Distance ridden on a strider',
+            'title': '熔岩地板又怎样？',
+            'desc': '用炽足兽骑行的距离',
             'unit': 'cm',
         },
         mcstats.StatReader(['minecraft:custom','minecraft:strider_one_cm']),

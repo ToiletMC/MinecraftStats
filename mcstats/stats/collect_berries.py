@@ -5,7 +5,7 @@ mcstats.registry.append(
         'collect_berries',
         {
             'title': '浆果爱好者',
-            'desc': '收集到的甜浆果',
+            'desc': '采集的甜浆果',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:picked_up','minecraft:sweet_berries']),

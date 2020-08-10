@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'use_crossbow',
         {
-            'title': 'Sharpshooter',
-            'desc': 'Bolts fired',
+            'title': '神枪手',
+            'desc': '弩栓开火',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:used','minecraft:crossbow']),

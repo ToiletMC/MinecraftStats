@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'place_conveyor',
         {
-            'title': 'Conveyor',
-            'desc': 'Hoppers and droppers placed',
+            'title': '输送机',
+            'desc': '漏斗和投掷器的放置',
             'unit': 'int',
         },
         mcstats.StatDiffReader(

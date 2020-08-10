@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'trigger_raid',
         {
-            'title': 'Bad Omen',
-            'desc': 'Raids triggered',
+            'title': '不祥之兆',
+            'desc': '袭击的触发',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:custom','minecraft:raid_trigger']),

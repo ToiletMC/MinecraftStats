@@ -5,7 +5,7 @@ mcstats.registry.append(
         'mine_dimensional',
         {
             'title': '地貌勘探者',
-            'desc': '挖掘的下界岩/末地石',
+            'desc': '挖掘的下界岩和末地石',
             'unit': 'int',
         },
         mcstats.StatSumReader([
