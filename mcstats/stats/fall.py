@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'fall',
         {
-            'title': 'Base Jumper',
-            'desc': 'Distance fallen',
+            'title': '极限跳伞运动员',
+            'desc': '跌落的距离',
             'unit': 'cm',
         },
         mcstats.StatReader(['minecraft:custom','minecraft:fall_one_cm'])

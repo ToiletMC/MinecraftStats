@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'eat_rawmeat',
         {
-            'title': 'Raw Eater',
-            'desc': 'Raw meat items eaten',
+            'title': '茹毛饮血者',
+            'desc': '吃下的生食',
             'unit': 'int',
         },
         mcstats.StatSumReader([

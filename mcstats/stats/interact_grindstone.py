@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'interact_grindstone',
         {
-            'title': 'I Fix It',
-            'desc': 'Grindstone interactions',
+            'title': '我能修好它！',
+            'desc': '与砂轮的互动',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:custom','minecraft:interact_with_grindstone']),

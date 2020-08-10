@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'jump',
         {
-            'title': 'Bunnyhopper',
-            'desc': 'Times jumped',
+            'title': '跳跳兔',
+            'desc': '跳跃的次数',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:custom','minecraft:jump'])

@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'interact_loom',
         {
-            'title': 'Tailor',
-            'desc': 'Loom interactions',
+            'title': '裁缝',
+            'desc': '与织布机的互动',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:custom','minecraft:interact_with_loom']),

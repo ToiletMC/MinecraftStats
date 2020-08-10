@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'interact_campfire',
         {
-            'title': 'Primitive Technology',
-            'desc': 'Campfire interactions',
+            'title': '原始技艺',
+            'desc': '与营火的互动',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:custom','minecraft:interact_with_campfire']),

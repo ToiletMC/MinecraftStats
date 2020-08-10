@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'eat_fish',
         {
-            'title': 'Fish Gourmet',
-            'desc': 'Fish eaten',
+            'title': '鱼之美食家',
+            'desc': '吃下的鱼',
             'unit': 'int',
         },
         mcstats.StatSumReader([
