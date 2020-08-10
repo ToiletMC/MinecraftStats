@@ -121,7 +121,7 @@ mcstats.showPlayerList = function(page=1,inactive=false) {
         mcstats.viewContent.innerHTML = `
             <div class="text-center mt-3">
                 <input id="show-inactive" type="checkbox" ${inactive ? 'checked' : ''}/>
-                <label for="show-inactive">Show inactive players</label>
+                <label for="show-inactive">展示不活跃玩家</label>
             </div>
             <div class="text-center mt-3">
                 <ul class="pagination justify-content-center">${paginator}</ul>
@@ -130,18 +130,16 @@ mcstats.showPlayerList = function(page=1,inactive=false) {
             <div class="round-box p-1">
                 <table class="table table-responsive-xs table-hover table-sm">
                 <thead>
-                    <th scope="col" class="text-shadow">Player</th>
-                    <th scope="col" class="text-right text-shadow">Last online</th>
+                    <th scope="col" class="text-shadow">玩家</th>
+                    <th scope="col" class="text-right text-shadow">最后游戏时间</th>
                 </thead>
                 <tbody>${tbody}</tbody>
                 </table>
             </div>
             </div>
             <div class="mt-2 text-muted text-center text-shadow">
-                Players need to have played at least ${mcstats.info.minPlayTime} minutes
-                in order to appear in the statistics.<br/>
-                Players who have not been online for over ${mcstats.info.inactiveDays} days
-                are considered inactive and are not eligible for any awards.
+                玩家至少需要在线 ${mcstats.info.minPlayTime} 分钟，才会出现在统计信息中。<br/>
+                玩家的离线时间超过 ${mcstats.info.inactiveDays} 天会被视为不会活跃，因此没有资格获得任何成就。
             </div>
             <div class="text-center mt-3">
                 <ul class="pagination justify-content-center">${paginator}</ul>
@@ -155,15 +153,15 @@ mcstats.showPlayerList = function(page=1,inactive=false) {
 
         // show
         mcstats.showView(
-            'Player List',
+            '玩家列表',
             `
-                    <span class="text-data">${numPlayers}</span>
-                    players total
-                    ( <span class="text-success">${numActive}</span> active,
-                    <span class="text-danger">${numInactive}</span> inactive).
+                    共有 <span class="text-data">${numPlayers}</span>
+                    位玩家
+                    ( <span class="text-success">${numActive}</span> 位活跃，
+                    <span class="text-danger">${numInactive}</span> 位不活跃)。
             `,
             `
-                Showing ${numPerPage} players per page.<br/>
+                每页展示 ${numPerPage} 位玩家。<br/>
             `,
             false);
     }, true);

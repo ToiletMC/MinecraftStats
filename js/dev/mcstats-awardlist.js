@@ -49,5 +49,5 @@ mcstats.showAwardsList = function() {
 
     // show
     mcstats.viewContent.innerHTML = viewHTML;
-    mcstats.showView('Award Overview', false, false, false);
+    mcstats.showView('金牌成就', false, false, false);
 };

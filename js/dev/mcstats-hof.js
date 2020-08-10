@@ -24,12 +24,12 @@ mcstats.showHof = function() {
         <div class="round-box p-1">
             <table class="table table-responsive-xs table-hover table-sm">
             <thead>
-                <th scope="col" class="text-right text-shadow">Rank</th>
-                <th scope="col" class="text-shadow">Player</th>
+                <th scope="col" class="text-right text-shadow">排名</th>
+                <th scope="col" class="text-shadow">玩家</th>
                 <th scope="col" class="text-center"><img class="img-textsize-2" title="Gold Medals" src="img/fatcow/medal_award_gold.png"/></th>
                 <th scope="col" class="text-center"><img class="img-textsize-2" title="Silver Medals" src="img/fatcow/medal_award_silver.png"/></th>
                 <th scope="col" class="text-center"><img class="img-textsize-2" title="Bronze Medals" src="img/fatcow/medal_award_bronze.png"/></th>
-                <th scope="col" class="text-right text-shadow">Score</th>
+                <th scope="col" class="text-right text-shadow">总分</th>
             </thead>
             <tbody>${tbody}</tbody>
             </table>
@@ -39,19 +39,18 @@ mcstats.showHof = function() {
 
     var crown = mcstats.info.crown;
     var formatCrown = function(x) {
-        return wordSmallInt(x) + ' point' + ((x > 1) ? 's' : '');
+        return wordSmallInt(x) + ' 分' + ((x > 1) ? '' : '');
     };
 
     // show
     mcstats.showView(
-        'Hall of Fame',
-        'Crown Score Ranking',
+        '名人堂',
+        '奖牌得分排名',
         `
-            The crown score is calculated by the amount of medals a player
-            holds.<br/>
-            A gold medal is worth <span class="rank-1">${formatCrown(crown[0])}</span>,
-            a silver medal is worth <span class="rank-2">${formatCrown(crown[1])}</span> and
-            a bronze medal is worth <span class="rank-3">${formatCrown(crown[2])}</span>.
+            最高分由玩家持有的奖牌数量计算得出。<br/>
+            一个金牌可得 <span class="rank-1">${formatCrown(crown[0])}</span>，
+            一个银牌可得 <span class="rank-2">${formatCrown(crown[1])}</span>，
+            一个铜牌可得 <span class="rank-3">${formatCrown(crown[2])}</span>。
         `,
         false);
 }

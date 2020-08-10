@@ -22,8 +22,8 @@ mcstats.showAward = function(id) {
             <div class="round-box p-1">
                 <table class="table table-responsive-xs table-hover table-sm">
                 <thead>
-                    <th scope="col" class="text-right text-shadow">Rank</th>
-                    <th scope="col" class="text-shadow">Player</th>
+                    <th scope="col" class="text-right text-shadow">排名</th>
+                    <th scope="col" class="text-shadow">玩家</th>
                     <th scope="col" class="text-right text-shadow">${award.desc}</th>
                 </thead>
                 <tbody>${tbody}</tbody>
@@ -35,7 +35,7 @@ mcstats.showAward = function(id) {
         // show
         mcstats.showView(
             award.title,
-            'Award Ranking',
+            '成就排名',
             false,
             'img/award-icons/' + id + '.png');
     });

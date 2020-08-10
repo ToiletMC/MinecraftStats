@@ -30,9 +30,9 @@ mcstats.showPlayer = function(uuid) {
                 <div class="round-box p-1">
                     <table class="table table-responsive-xs table-hover table-sm">
                     <thead>
-                        <th scope="col" class="text-right text-shadow">Rank</th>
-                        <th scope="col" class="text-shadow">Award</th>
-                        <th scope="col" class="text-shadow">Score</th>
+                        <th scope="col" class="text-right text-shadow">排名</th>
+                        <th scope="col" class="text-shadow">成就</th>
+                        <th scope="col" class="text-shadow">描述</th>
                     </thead>
                     <tbody>${tbody}</tbody>
                     </table>
@@ -43,8 +43,8 @@ mcstats.showPlayer = function(uuid) {
             // show
             mcstats.showView(
                 mcstats.playerWidget(uuid, 'textw texth align-baseline mr-2', false),
-                'Player Statistics',
-                'Last played: ' + mcstats.lastOnlineWidget(player.last),
+                '玩家统计',
+                '最后游戏时间：' + mcstats.lastOnlineWidget(player.last),
                 false);
         });
     });

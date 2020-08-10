@@ -1,5 +1,5 @@
 // Number formatter
-intlFormat = new Intl.NumberFormat('en');
+intlFormat = new Intl.NumberFormat('cn');
 
 formatFloat = function(value) {
     return (value != parseInt(value)) ? value.toFixed(1) : value;
@@ -9,33 +9,33 @@ formatDate = function(unixTime) {
     var date = new Date();
     date.setTime(unixTime * 1000);
 
-    return date.toLocaleDateString('en-US', {day: 'numeric', month: 'short', year: 'numeric'});
+    return date.toLocaleDateString('zh-CN', {day: 'numeric', month: 'short', year: 'numeric'});
 };
 
 formatTime = function(unixTime) {
     var date = new Date();
     date.setTime(unixTime * 1000);
 
-    return date.toLocaleDateString('en-US', {day: 'numeric', month: 'short', year: 'numeric'}) +
+    return date.toLocaleDateString('zh-CN', {day: 'numeric', month: 'short', year: 'numeric'}) +
         ' - ' +
-        date.toLocaleTimeString('en-US', {hour: '2-digit', minute: '2-digit', hour12: false});
+        date.toLocaleTimeString('zh-CN', {hour: '2-digit', minute: '2-digit', hour12: false});
 };
 
 wordSmallInt = function(x) {
     switch(x) {
-        case 0:  return 'zero';
-        case 1:  return 'one';
-        case 2:  return 'two';
-        case 3:  return 'three';
-        case 4:  return 'four';
-        case 5:  return 'five';
-        case 6:  return 'six';
-        case 7:  return 'seven';
-        case 8:  return 'eight';
-        case 9:  return 'nine';
-        case 10:  return 'ten';
-        case 11:  return 'eleven';
-        case 12:  return 'twelve';
+        case 0:  return '零';
+        case 1:  return '一';
+        case 2:  return '二';
+        case 3:  return '三';
+        case 4:  return '四';
+        case 5:  return '五';
+        case 6:  return '六';
+        case 7:  return '七';
+        case 8:  return '八';
+        case 9:  return '九';
+        case 10:  return '十';
+        case 11:  return '十一';
+        case 12:  return '十二';
         default: return ''+x;
     }
 };
@@ -63,23 +63,23 @@ mcstats.formatValue = function(value, unit, compact = false) {
                 var higher = false;
 
                 if(seconds > 86400) {
-                    value += Math.floor(seconds / 86400) + 'd ';
+                    value += Math.floor(seconds / 86400) + '天 ';
                     seconds %= 86400;
                     higher = true;
                 }
 
                 if(higher || seconds > 3600) {
-                    value += Math.floor(seconds / 3600) + 'h ';
+                    value += Math.floor(seconds / 3600) + '时 ';
                     seconds %= 3600;
                     higher = true;
                 }
 
                 if(higher || seconds > 60) {
-                    value += Math.floor(seconds / 60) + 'min ';
+                    value += Math.floor(seconds / 60) + '分 ';
                     seconds %= 60;
                 }
 
-                value += Math.floor(seconds) + 's';
+                value += Math.floor(seconds) + '秒';
             } else {
                 // aligned tabular view
                 var table = `<table class="time-data"><tbody><tr>`
@@ -87,7 +87,7 @@ mcstats.formatValue = function(value, unit, compact = false) {
 
                 if(seconds > 86400) {
                     var days = Math.floor(seconds / 86400);
-                    table += `<td class="days">${days}d</td>`
+                    table += `<td class="days">${days}天</td>`
 
                     seconds %= 86400;
                     higher = true;
@@ -97,7 +97,7 @@ mcstats.formatValue = function(value, unit, compact = false) {
 
                 if(higher || seconds > 3600) {
                     var hours = Math.floor(seconds / 3600);
-                    table += `<td class="hours">${hours}h</td>`
+                    table += `<td class="hours">${hours}时</td>`
                     seconds %= 3600;
                     higher = true;
                 } else {
@@ -106,7 +106,7 @@ mcstats.formatValue = function(value, unit, compact = false) {
 
                 if(higher || seconds > 60) {
                     var minutes = Math.floor(seconds / 60);
-                    table += `<td class="minutes">${minutes}min</td>`
+                    table += `<td class="minutes">${minutes}分</td>`
 
                     seconds %= 60;
                 } else {
@@ -114,7 +114,7 @@ mcstats.formatValue = function(value, unit, compact = false) {
                 }
 
                 seconds = Math.floor(seconds);
-                table += `<td class="seconds">${seconds}s</td>`;
+                table += `<td class="seconds">${seconds}秒</td>`;
                 table += `</tbody></table>`;
                 return table;
             }
