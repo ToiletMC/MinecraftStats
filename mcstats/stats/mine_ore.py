@@ -18,7 +18,7 @@ create_ore_stat('黑金', 'coal_ore', '煤矿石')
 create_ore_stat('铁石心肠', 'iron_ore', '铁矿石')
 create_ore_stat('钻石！', 'diamond_ore', '钻石矿石')
 create_ore_stat('山地矿工', 'emerald_ore', '绿宝石矿石')
-create_ore_stat('蓝', 'lapis_ore', '青金石矿石)
+create_ore_stat('蓝', 'lapis_ore', '青金石矿石')
 create_ore_stat('红石矿工', 'redstone_ore', '红石矿石')
 create_ore_stat('白白的', 'nether_quartz_ore', '下界石英矿石')
 
