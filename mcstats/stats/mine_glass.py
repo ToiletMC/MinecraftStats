@@ -3,8 +3,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'mine_glass',
         {
-            'title': 'Glassbreaker',
-            'desc': 'Glass broken',
+            'title': '玻璃粉碎机',
+            'desc': '破坏的玻璃',
             'unit': 'int',
         },
         mcstats.StatSumMatchReader(

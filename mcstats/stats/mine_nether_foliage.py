@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'mine_nether_foliage',
         {
-            'title': 'Nether Mower',
-            'desc': 'Nether sprouts & roots removed',
+            'title': '下界除草机',
+            'desc': '移除的下界苗和菌索',
             'unit': 'int',
         },
         mcstats.StatSumReader([

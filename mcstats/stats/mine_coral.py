@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'mine_coral',
         {
-            'title': 'Coral Collector',
-            'desc': 'Corals mined',
+            'title': '珊瑚收藏家',
+            'desc': '挖掘的珊瑚',
             'unit': 'int',
         },
         mcstats.StatSumMatchReader(

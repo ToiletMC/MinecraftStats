@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'kill_any',
         {
-            'title': 'Killing Spree!',
-            'desc': 'Total mobs killed',
+            'title': '杀戮狂欢！',
+            'desc': '杀死生物的总数',
             'unit': 'int',
         },
         mcstats.StatReader(['minecraft:custom','minecraft:mob_kills'])
@@ -78,8 +78,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'kill_ocelot',
         {
-            'title': 'Kitty Killer',
-            'desc': 'Ocelots and Cats killed',
+            'title': '猫咪杀手',
+            'desc': '杀死的猫和豹猫',
             'unit': 'int',
         },
         mcstats.StatSumReader([
@@ -93,8 +93,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'kill_llama',
         {
-            'title': 'Caravan Bandit',
-            'desc': 'LLamas killed',
+            'title': '商队匪徒',
+            'desc': '杀死的羊驼',
             'unit': 'int',
         },
         mcstats.StatSumReader([
@@ -108,8 +108,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'kill_zombie',
         {
-            'title': 'Zombie Grinder',
-            'desc': 'Zombies/Husks/Drowned killed',
+            'title': '僵尸绞杀机',
+            'desc': '杀死的僵尸/尸壳/溺尸',
             'unit': 'int',
         },
         mcstats.StatSumReader([
@@ -125,8 +125,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'kill_skeleton',
         {
-            'title': 'Bone Collector',
-            'desc': 'Skeletons/Strays killed',
+            'title': '骨头收藏家',
+            'desc': '杀死的骷髅/流浪者',
             'unit': 'int',
         },
         mcstats.StatSumReader([
@@ -140,8 +140,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'kill_spider',
         {
-            'title': 'Arachnophobia',
-            'desc': 'Spiders killed',
+            'title': '蜘蛛恐惧症',
+            'desc': '杀死的蜘蛛',
             'unit': 'int',
         },
         mcstats.StatSumReader([
@@ -155,8 +155,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'kill_guardian',
         {
-            'title': 'Underwater Raider',
-            'desc': 'Score vs Guardians',
+            'title': '深海寻宝者',
+            'desc': '杀死的守卫者',
             'unit': 'int',
         },
         mcstats.StatSumReader([
@@ -170,8 +170,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'kill_illagers',
         {
-            'title': 'Cleanser',
-            'desc': 'Illagers killed',
+            'title': '去污粉',
+            'desc': '杀死的灾厄村民',
             'unit': 'int',
         },
         mcstats.StatSumReader([
@@ -188,8 +188,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'kill_hoglins',
         {
-            'title': 'Hakuna Matata',
-            'desc': 'Hoglins & Zoglins killed',
+            'title': '哼唧哼唧',
+            'desc': '杀死的疣猪兽和僵尸疣猪兽',
             'unit': 'int',
         },
         mcstats.StatSumReader([
@@ -204,8 +204,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'kill_fish',
         {
-            'title': 'Fish Catcher',
-            'desc': 'Fish killed',
+            'title': '捕鱼大师',
+            'desc': '杀死的鱼',
             'unit': 'int',
         },
         mcstats.StatSumReader([

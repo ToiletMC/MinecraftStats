@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'mine_dimensional',
         {
-            'title': 'Terraformer',
-            'desc': 'Netherrack/End stone mined',
+            'title': '地貌勘探者',
+            'desc': '挖掘的下界岩/末地石',
             'unit': 'int',
         },
         mcstats.StatSumReader([

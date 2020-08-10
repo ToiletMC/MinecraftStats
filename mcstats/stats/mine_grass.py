@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'mine_grass',
         {
-            'title': 'Lawnmower',
-            'desc': 'Grass removed',
+            'title': '除草机',
+            'desc': '移除的草',
             'unit': 'int',
         },
         mcstats.StatSumReader([

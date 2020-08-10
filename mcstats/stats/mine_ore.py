@@ -6,29 +6,29 @@ def create_ore_stat(title, oreId, oreName, minVersion = 0):
             'mine_' + oreId,
             {
                 'title': title,
-                'desc': oreName + ' mined',
+                'desc': '挖掘的' + oreName,
                 'unit': 'int',
             },
             mcstats.StatReader(['minecraft:mined','minecraft:' + oreId]),
             minVersion
         ))
 
-create_ore_stat('Archeologist', 'ancient_debris', 'Ancient Debris', 2504) # added in 20w06a
-create_ore_stat('Black Gold', 'coal_ore', 'Coal Ore')
-create_ore_stat('Iron Heart', 'iron_ore', 'Iron Ore')
-create_ore_stat('Diamonds!', 'diamond_ore', 'Diamond Ore')
-create_ore_stat('Mountain Miner', 'emerald_ore', 'Emerald Ore')
-create_ore_stat('Blue', 'lapis_ore', 'Lapis Lazuli Ore')
-create_ore_stat('Redstone Miner', 'redstone_ore', 'Redstone Ore')
-create_ore_stat('Quartz', 'nether_quartz_ore', 'Nether Quartz Ore')
+create_ore_stat('考古学家', 'ancient_debris', '远古残骸', 2504) # added in 20w06a
+create_ore_stat('黑金', 'coal_ore', '煤矿石')
+create_ore_stat('铁石心肠', 'iron_ore', '铁矿石')
+create_ore_stat('钻石！', 'diamond_ore', '钻石矿石')
+create_ore_stat('山地矿工', 'emerald_ore', '绿宝石矿石')
+create_ore_stat('蓝', 'lapis_ore', '青金石矿石)
+create_ore_stat('红石矿工', 'redstone_ore', '红石矿石')
+create_ore_stat('白白的', 'nether_quartz_ore', '下界石英矿石')
 
 # gold ore
 mcstats.registry.append(
     mcstats.MinecraftStat(
         'mine_gold_ore',
         {
-            'title': 'Gold Rush',
-            'desc': 'Gold Ore mined',
+            'title': '淘金者',
+            'desc': '挖掘的金矿石',
             'unit': 'int',
         },
         mcstats.StatSumReader([

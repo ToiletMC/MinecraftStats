@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'mine_ice',
         {
-            'title': 'Ice Breaker',
-            'desc': 'Ice broken',
+            'title': '碎冰机',
+            'desc': '破坏的冰',
             'unit': 'int',
         },
         mcstats.StatSumReader([

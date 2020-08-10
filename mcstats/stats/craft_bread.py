@@ -5,7 +5,7 @@ mcstats.registry.append(
         'craft_bread',
         {
             'title': '烘焙师',
-            'desc': '制作的面包，蛋糕和曲奇',
+            'desc': '制作的面包/蛋糕/曲奇',
             'unit': 'int',
         },
         mcstats.StatSumReader([

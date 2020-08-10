@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'mine_wood',
         {
-            'title': 'Woodcutter',
-            'desc': 'Wood blocks cut',
+            'title': '樵夫',
+            'desc': '砍下的木块',
             'unit': 'int',
         },
         mcstats.StatSumMatchReader(

@@ -4,8 +4,8 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'mine_stone',
         {
-            'title': 'Stonemason',
-            'desc': 'Stone mined',
+            'title': '石匠',
+            'desc': '挖掘的石头',
             'unit': 'int',
         },
         mcstats.StatSumReader([
