@@ -4,7 +4,7 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'trade',
         {
-            'title': '商人',
+            'title': '企业家',
             'desc': '与村民交易的次数',
             'unit': 'int',
         },

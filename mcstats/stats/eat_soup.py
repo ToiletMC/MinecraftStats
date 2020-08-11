@@ -4,7 +4,7 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'eat_soup',
         {
-            'title': '嗜汤者',
+            'title': '孟婆',
             'desc': '吃或喝下的炖菜汤品',
             'unit': 'int',
         },

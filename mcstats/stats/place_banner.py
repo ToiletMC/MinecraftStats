@@ -4,7 +4,7 @@ mcstats.registry.append(
     mcstats.MinecraftStat(
         'place_banner',
         {
-            'title': '小广告王',
+            'title': '城市牛皮癣',
             'desc': '旗帜的放置',
             'unit': 'int',
         },
